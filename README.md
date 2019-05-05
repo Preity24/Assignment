@@ -1,5 +1,5 @@
 # Assignment
-Run  # npm install
+# Run npm install
 This will install all the dev dependencies.
-Run  # gulp
+# Run gulp
 This will run the project at localhost 8080
