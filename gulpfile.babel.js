@@ -48,4 +48,6 @@ gulp.task('html', () => {
   .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'js', 'sass', 'connect', 'watch']);
+gulp.task('dev',['html', 'js', 'sass','connect','watch'])
+
+gulp.task('default', ['html', 'js', 'sass']);
