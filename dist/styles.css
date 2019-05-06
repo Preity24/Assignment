@@ -6,8 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
-  left: 0;
-  top: 10px; }
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%, 0); }
   .customNav a {
     color: #fff;
     font-weight: 500; }
@@ -46,13 +47,21 @@ body {
     transform: translateX(779px) rotate(45deg);
     border-radius: 4px 0 0 0;
     background: #fff;
-    position: absolute;
-    left: 0; }
+    position: absolute; }
+  .customNav #my-tip_product .dropdownArrow {
+    left: -148%; }
+  .customNav #my-tip_developers .dropdownArrow {
+    left: -132%; }
+  .customNav #my-tip_company .dropdownArrow {
+    left: -114%; }
 
 div.tip-content.hidden {
   display: none;
-  height: 643px;
+  height: 250px;
   padding: 20px;
+  position: absolute;
+  left: -140%;
+  top: 42px;
   transform: translateX(406px);
   width: 494px; }
 
