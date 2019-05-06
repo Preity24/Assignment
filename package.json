@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "postinstall": "gulp && gulp serve"
   },
   "author": "\"Preeti Kumari\"",
   "license": "ISC",
