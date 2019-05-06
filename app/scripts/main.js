@@ -10,7 +10,7 @@ $( document ).ready(function() {
         console.log(index);
         var subMenuListItems = '';
         $.each(returnedValue[index], function(key, value){
-            subMenuListItems += '<div class="productLinkContent"><h3 class="linkTitle">'+value.title+'</h3><p class="linkSub">'+value['sub-title']+'</p></div>'
+            subMenuListItems += '<div class="dropdownArrow"></div><div class="productLinkContent pb-3"><h3 class="linkTitle">'+value.title+'</h3><p class="linkSub">'+value['sub-title']+'</p></div>'
              
         })
         var tooltipWrapper = '<div id="my-tip_' + index + '" class="tip-content hidden" aria-hidden="true">'+subMenuListItems+'</div>'

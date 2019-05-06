@@ -54,6 +54,7 @@ body {
       flex-direction: column;
       margin-left: 18px;
     }
+
     .dropdownArrow {
       top: -6px;
       margin: 0 0 0 -6px;
@@ -63,14 +64,35 @@ body {
       border-radius: 4px 0 0 0;
       background: #fff;
       position: absolute;
-      left: 0;
     }
+
+    #my-tip_product {
+      .dropdownArrow {
+        left: -148%;
+      }
+    }
+
+    #my-tip_developers {
+      .dropdownArrow {
+        left: -132%;
+      }
+    }
+
+    #my-tip_company {
+      .dropdownArrow {
+        left: -114%;
+      }
+    }
+   
 }
 
 div.tip-content.hidden {
   display:none;
-  height: 643px;
+  height: 250px;
   padding: 20px;
+  position: absolute;
+  left: -140%;
+  top: 42px;
   transform: translateX(406px);
   width: 494px;
 }
