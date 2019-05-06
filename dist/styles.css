@@ -1,3 +1,6 @@
+body {
+  background: #6772e5; }
+
 .customNav {
   font-family: Camphor,Open Sans,Segoe UI,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5,6 +8,9 @@
   position: absolute;
   left: 0;
   top: 10px; }
+  .customNav a {
+    color: #fff;
+    font-weight: 500; }
   .customNav .linkTitle {
     margin: 0;
     color: #6772e5;
@@ -20,3 +26,35 @@
     margin: 5px 0 0;
     display: block;
     white-space: nowrap; }
+  .customNav .tip {
+    text-transform: capitalize; }
+  .customNav .tip-content {
+    background: #fff;
+    transform: translateX(583px);
+    width: 393px;
+    height: 421px; }
+  .customNav .productLinkContent {
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 18px; }
+  .customNav .dropdownArrow {
+    top: -6px;
+    margin: 0 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    transform: translateX(779px) rotate(45deg);
+    border-radius: 4px 0 0 0;
+    background: #fff;
+    position: absolute;
+    left: 0; }
+
+div.tip-content.hidden {
+  display: none;
+  height: 643px;
+  padding: 20px;
+  transform: translateX(406px);
+  width: 494px; }
+
+a.nav-link.tip:hover + div.tip-content.hidden {
+  display: block; }

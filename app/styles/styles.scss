@@ -1,3 +1,10 @@
+$white: #fff;
+$blue-200: #6772e5;
+
+body {
+  background:$blue-200;;
+}
+
 .customNav {
   font-family: Camphor,Open Sans,Segoe UI,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -6,9 +13,14 @@
   left: 0;
   top: 10px;
 
+    a {
+      color: $white;
+      font-weight: 500;
+      }
+
     .linkTitle {
       margin: 0;
-      color: #6772e5;
+      color: $blue-200;
       font-size: 16px;
       line-height: 22px;
       text-transform: uppercase;
@@ -24,4 +36,44 @@
       display: block;
       white-space: nowrap;
     }
+
+    .tip {
+      text-transform: capitalize;
+    }
+
+    .tip-content {
+      background: $white;
+      transform: translateX(583px);
+      width: 393px;
+      height: 421px;
+    }
+
+    .productLinkContent {
+      flex: 1;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 18px;
+    }
+    .dropdownArrow {
+      top: -6px;
+      margin: 0 0 0 -6px;
+      width: 12px;
+      height: 12px;
+      transform: translateX(779px) rotate(45deg);
+      border-radius: 4px 0 0 0;
+      background: #fff;
+      position: absolute;
+      left: 0;
+    }
+}
+
+div.tip-content.hidden {
+  display:none;
+  height: 643px;
+  padding: 20px;
+  transform: translateX(406px);
+  width: 494px;
+}
+a.nav-link.tip:hover+div.tip-content.hidden {
+  display:block;
 }
